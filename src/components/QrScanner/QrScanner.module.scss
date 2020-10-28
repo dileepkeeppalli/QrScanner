@@ -1,0 +1,28 @@
+.scanBtn{
+ width: 100%  ;
+ position: fixed;
+ bottom: 30px; 
+}
+
+.scanner{
+    width: 320;
+    margin: "0 auto";
+    object-fit: "cover";
+}
+
+.scanContainer{
+    position: "relative";
+    width: "320px";
+    margin: "0 auto";
+}
+
+.scanFocus{
+    position: "absolute";
+    width: "90%";
+    height: "85%";
+    border: "3px solid red";
+    margin: "15px";
+    top: "0px";
+    left: "0px";
+    border-radius: "10px";
+}
