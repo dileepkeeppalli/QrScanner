@@ -18,17 +18,18 @@ export default class QrScanner extends Component {
     this.handleScan = this.handleScan.bind(this)
   }
   handleScan(data){
-    const {scanSuccess} = this.props
+    const {successScan} = this.props
     this.setState({
       result: data,
     })
     if(data){
       console.log("Succesfully scanned with ", data)
+      successScan(data)
     }
   }
   handleError(err){
-    const {scanFailure} = this.props
-    scanFailure(err)
+    const {failureScan} = this.props
+    failureScan(err)
     console.error(err)
   }
 
